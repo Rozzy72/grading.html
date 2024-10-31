@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        // unshift is used to add to first list
+        // to remove from your array, use pop
+        // dot push is use to add more/ to the last items to your array lists
+        // Array is recognize with square bracket 1.e []
+        let fruits = ['apple', 'orange', 'banana', 'watermelon', 'cherry']
+        // for length start counting from 1 and from index count from zero
+        console.log(fruits.length);
+        console.log(fruits.indexOf('apple'))
+        console.log(fruits)
+        fruits.push('grapes')
+        console.log(fruits)
+        fruits.push('Tangerine')
+        console.log(fruits)
+        fruits.pop()
+        fruits.pop()
+        fruits.pop()
+        console.log(fruits)
+        fruits.unshift('dates')
+        console.log(fruits);
+
+        let classOne = ['bayo', 'kunle','Mr Plato', 'Mr Abiola']
+        console.log(classOne)
+        classOne.unshift('Mr Abiodun')
+        console.log(classOne);
+        classOne.shift('')
+        console.log(classOne);
+        console.log(classOne[classOne.length-2]);
+
+
+        let class1 = ['khalid','yanju','haywhy']
+        let class2 = ['me','mercy']
+        let newClass = class1.concat(class2)
+        console.log(newClass);
+
+        let stationaries = ['crayor','ruler','book','pencil','pen','eraser']
+        let Newstationaries = stationaries.slice(4,4)
+        console.log(Newstationaries)
+
+        let students = ['pam','bam','dammy','mercy','danny','jay','kay']
+        students.splice(2,3)
+        console.log(students);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+    </script>
+</body>
+</html>

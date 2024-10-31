@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(multimedia/images.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+}
+.grading{
+    border-radius: 9px;
+    padding: 10px;
+    width: 30%;
+    border: 1px solid brown;
+    /* display: flex; */
+    justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+    
+}
+button{
+    background-color: red;
+    padding: 10px 10px;
+
+}
+#gradeNu{
+  border-radius: 5px;
+  padding: 10px;
+}

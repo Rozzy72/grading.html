@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <textarea name="" id="character" onkeyup="wordCount()"></textarea>
+    <p><code id="num">0</code>words</p>
+   
+
+
+    <script>
+
+        function wordCount() {
+            // '/\s+/' : solution to remove spacing(reghex)
+            let charact = character.value
+          let allwords = charact.trim().split('  ').length;
+          num.innerHTML = allwords;
+
+            
+        }
+        // let sample = String('Abiola')
+        // console.log(sample.length)
+        // console.log(sample.charAt(4))
+    </script>
+</body>
+</html>

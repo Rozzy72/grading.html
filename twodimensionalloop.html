@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="something">here</p>
+    <table border="1">
+        <tr id="row"></tr>
+    </table>
+
+
+    <script>
+    //     for(let carton=1; carton<=10; carton++){
+    //         // console.log(`${carton}carton`)
+        
+    //     for(let biscuit=1; biscuit<=20; biscuit++){
+    //         console.log(`${carton}carton${biscuit}biscuit`)
+    //     }
+    // }
+
+        //outer loop
+
+    for(let carton=1; carton<=12; carton++){
+        
+    for(let biscuit=1; biscuit<=12; biscuit++){
+       console.log(`${carton} x ${biscuit} = ${carton*biscuit}`)
+       }
+    }
+
+        // multiplication
+        for(let a=0; a<=12; a++){
+            let mult = `<td>`
+                for (let   b= 0; b<=12; b++){
+                mult+= `<p>${a}x${b} = ${a*b}</p>`
+           }
+                mult+= `</td>`
+                row.innerHTML+= mult
+//             for (let b = 1; b<=12; b++){
+//                 something.innerHTML+= `<p>${a}x${b} = ${a*b}</p>`
+// 1              }
+        }
+    </script>
+</body>
+</html>

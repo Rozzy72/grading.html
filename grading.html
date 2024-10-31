@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grading.css">
+</head>
+<body>
+    <div class="grading">
+        <input type="number" name="" id="gradeNu"><br>
+        <button  type="button"   onclick="checkGrade()">check grade</button>
+        <p id="grad">input to check grade</p>
+    </div>
+
+    <script>
+        var song1 = new Audio('multimedia/efek-suara-funny-putri-lucu-180275.mp3')
+        var song2 = new Audio('multimedia/Download (2).mp4')
+        function  checkGrade() {
+            var gradeNum = document.getElementById('gradeNu').value;
+
+            if(gradeNum >=0 && gradeNum <=39){
+                document.getElementById('grad').innerHTML = '<p style="color:red;">F</p>'
+                song1.play()
+
+            }else if(gradeNum >=40 && gradeNum <=44){
+                document.getElementById('grad').innerHTML = '<p style="color:red;">E</p>'
+                song2.play()
+
+            }else if(gradeNum >=45 && gradeNum <=49){
+                document.getElementById('grad').innerHTML = '<p style="color:red;">D</p>'
+                
+            }else if (gradeNum >= 50 && gradeNum <= 59) {
+            document.getElementById("grad").innerHTML ='<p style="color: green;">C</p>';
+            } else if (gradeNum >= 60 && gradeNum <= 69) {
+            document.getElementById("grad").innerHTML ='<p style="color: pink;">average,you scored 60-69 B</p>';
+
+             } else if (gradeNum >= 70 && gradeNum <= 100) {
+            document.getElementById("grad").innerHTML ='<p style="color: brown;">Excellent,you scored 70-100 A</p>';
+
+            }else{
+            document.getElementById("grad").innerHTML ='<p style="color: red;">invalid score</p>';
+        }
+        }
+
+    </script>
+</body>
+</html>

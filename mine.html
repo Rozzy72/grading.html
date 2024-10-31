@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <label for="">Score</label> -->
+    <input type="number" name="" id="gradeNu">
+    <button onclick="score()">Submit</button>
+    <p id="grad">Input your score here</p>
+
+
+
+    <script>
+        function score() {
+           var gradeNum = document.getElementById('gradeNu').value 
+
+           if (gradeNum>=0 && gradeNum<=20) {
+            document.getElementById('grad').innerHTML = '<p style="color:red;">F</p>'
+           }else if (gradeNum>=21 && gradeNum<=40) {
+            document.getElementById('grad').innerHTML = '<p style="color:blue;">D</p>'
+           }
+        }
+    </script>
+</body>
+</html>

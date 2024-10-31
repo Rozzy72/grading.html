@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Todo.css">
+</head>
+<body>
+    <input type="text" placeholder="input your todo" id="todoItem" autofocus>
+    <button  class="golden-button"     onclick="submitTodo()">Submit todo</button>
+    <p id="TodoList"></p>
+    <button onclick="deleteLast()">deleteLast</button><br>
+    <button onclick="deleteFirst()">deleteFist</button>
+
+
+    <script>
+        let todoArray = []
+        function submitTodo () {
+            // alert('danger! danger!')
+            console.log(todoItem.value)
+            if (todoItem.value == ``) {
+                alert('input something')
+            } else {
+                todoArray.push(todoItem.value)
+            }
+            console.log(todoArray)
+
+            displayTodo()
+            todoItem.value = ``
+
+           
+        }
+
+
+        function displayTodo() {
+            TodoList.innerHTML = ``
+            for (let i = 0; i < todoArray.length; i++) {
+               TodoList.innerHTML += `${i+1}. ${todoArray[i]}<br/>`
+                
+            }
+        }
+
+        function deleteLast() {
+            todoArray.pop()
+            console.log(todoArray);
+            displayTodo()
+            
+        }
+
+        function deleteFirst() {
+            todoArray.shift()
+            console.log(todoArray);
+            displayTodo()
+        }
+    </script>
+</body>
+</html>

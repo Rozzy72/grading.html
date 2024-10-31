@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" name="" id="firstNum" placeholder="first number" />
+    <input type="number" name="" id="secondNum" placeholder="second number" />
+    <select name="" id="operator" title="">
+      <option value="+">Add</option>
+      <option value="-">Minus</option>
+      <option value="/">Division</option>
+      <option value="*">Miltiply</option>
+      <option value="%">Rem</option>
+    </select>
+
+    <button onclick="calc()">submit</button>
+
+    <p id="ans"></p>
+    <script>
+
+      function calc() {
+          // alert('hello there')
+          let a = Number(firstNum.value);
+          let b = Number(secondNum.value);
+          if (operator.value == "+") {
+              ans.innerHTML = `${a + b}`;
+          }else if (operator.value == "-") {
+              ans.innerHTML = `${a - b}`;
+          }else if (operator.value == "/"){
+              ans.innerHTML = `${a / b}`;
+          }else if (operator.value == "*") {
+              ans.innerHTML = `${a * b}`;
+          }else{
+              ans.innerHTML = `${a % b}`
+            }
+        }
+    </script>
+  </body>
+</html>

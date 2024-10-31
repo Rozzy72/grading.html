@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <span onmouseover="abiodun()">hover on me</span> <br />
+
+    <span id="clickme" onclick="adeyanju()">click me</span> -->
+
+
+
+    <input type="number" name="" id="check">
+    <button onclick="gradeCheck()">check grade</button>
+    <p id="score">Try and input to check grade</p>
+
+
+
+    <script>
+
+        
+      //assignment one is to study event listners
+    //   function abiodun() {
+    //     confirm("i am trying out something");
+    //   }
+
+    //   function adeyanju() {
+    //     document.getElementById("clickme").innerHTML = "you have clicked me";
+    //   }
+
+      function gradeCheck() {
+        let myScore = document.getElementById('check').value
+
+        if (myScore >= 0 && myScore <= 39) {
+          document.getElementById("score").innerHTML =
+            '<p style="color: red;">olodo,score 0-39</p>';
+        } else if (myScore >= 40 && myScore <= 44) {
+          document.getElementById("score").innerHTML =
+            '<p style="color: black;">you tried,you scored 40-44 E</p>';
+        } else if (myScore >= 45 && myScore <= 49) {
+          document.getElementById("score").innerHTML =
+            '<p style="color: blue;">you tried,you scored 45-49 D</p>';
+        } else if (myScore >= 50 && myScore <= 59) {
+          document.getElementById("score").innerHTML =
+            '<p style="color: green;">good,you scored 50-59 C</p>';
+        } else if (myScore >= 60 && myScore <= 69) {
+          document.getElementById("score").innerHTML =
+            '<p style="color: pink;">average,you scored 60-69 B</p>';
+        } else if (myScore >= 70 && myScore <= 100) {
+          document.getElementById("score").innerHTML =
+            '<p style="color: brown;">Excellent,you scored 70-100 A</p>';
+        }else{
+            document.getElementById("score").innerHTML ='<p style="color: red;">invalid score</p>';
+        }
+      }
+    </script>
+  </body>
+</html>

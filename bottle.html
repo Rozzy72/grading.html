@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="something"></p>
+
+
+    <script>
+        for(bottles =99; bottles >=0; bottles--){
+            if(bottles >1){
+                something.innerHTML+= `<p>${bottles}bottles of beer on the wall, ${bottles}bottles of beer.
+                    Take one down and pass it around, ${bottles-1} bottles of beer on the wall.</p>`
+        }else if(bottles ==1){
+            something.innerHTML+= `<p>${bottles}bottles of beer on the wall, ${bottles}bottles of beer.
+                    Take one down and pass it around, no more bottles of beer on the wall.</p>`
+        }else{
+            something.innerHTML+= `<p>No more bottles of beer on the wall, no more bottles of beer.
+                    Go to the store and buy some more, 99 bottles of beer on the wall.</p>`
+        }
+    }
+    </script>
+</body>
+</html>
